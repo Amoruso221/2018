@@ -106,65 +106,12 @@ export default {
         },
 
         handleCurrentChange(val){
-            console.log('entra al metodo');
             let pagina = this.paginaActual;
-            console.log('pagina: ' + pagina);
             pagina = pagina - 1;
-
             this.lista = this.cards.slice(pagina * 12, (pagina + 1) * 12);
         }
     }
 }
 </script>
 
-<style scoped>
-    .el-select {
-        margin: 5px;
-    }
-
-    .el-alert {
-      margin: 5px;
-      max-width: 300px;
-      display: inline;
-  }
-  
-  .bottom {
-    margin-top: 13px;
-    line-height: 12px;
-  }
-
-  a {
-    padding: 0;
-    float: right;
-  }
-
-  .clearfix:before,
-  .clearfix:after {
-      display: table;
-      content: "";
-  }
-  
-  .clearfix:after {
-      clear: both
-  }
-
-  span {
-      margin: 5px;
-      display: block;
-      font-family: Arial, Helvetica, sans-serif;
-  }
-
-   .el-col {
-       margin: 5px;
-   }
-
-   .el-card {
-       height: 120px;
-       background-color: whitesmoke;
-   }
-
-   p {
-       line-height: 15px;
-       margin: 5px;
-   }
-</style>
+<style src="../assets/css/estilos.css"></style>

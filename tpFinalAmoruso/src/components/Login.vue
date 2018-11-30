@@ -8,7 +8,7 @@
             <el-main>
                 <el-row :gutter="20">
                     <el-col :span="6"><div class="grid-content"></div></el-col>
-                    <el-col :span="12">
+                    <el-col :span="8">
                         <div class="alinear">
                             <img src="../assets/images/HS_logo.png" alt="Logo HS">
                         </div>
@@ -17,7 +17,7 @@
                 </el-row>
 
                 <el-row>
-                    <el-col :span="8"><div class="grid-content"></div></el-col>
+                    <el-col :span="6"><div class="grid-content"></div></el-col>
                     <el-col :span="8">
                         <section class="alinear">
                             <el-input placeholder="Usuario" v-model="usuario"></el-input>
@@ -29,7 +29,7 @@
                             <el-button @click="login" type="primary">Login</el-button>
                         </section>
                     </el-col>
-                    <el-col :span="8">
+                    <el-col :span="6">
                         <div class="grid-content">
                               <section class="alinear">
                                 <el-alert

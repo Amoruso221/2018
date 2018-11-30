@@ -1,7 +1,7 @@
 <template>
     <el-row>
     <!-- spinner -->
-        <el-row :gutter="20" class="spinnerRow" v-if="loading">
+        <el-row :gutter="20" class="spinnerRow" v-if="loading"  type="flex" justify="center">
             <el-col :span="6" :offset="6">
                 <i class="el-icon-loading"></i>
             </el-col>
@@ -57,6 +57,7 @@ export default {
 </script>
 
 <style scoped>
+
     .el-select {
         margin: 5px;
     }

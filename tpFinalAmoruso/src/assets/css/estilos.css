@@ -1,0 +1,43 @@
+.el-select {
+    margin: 5px;
+}
+
+.el-alert {
+  margin: 5px;
+  max-width: 300px;
+  display: inline;
+}
+
+.bottom {
+margin-top: 13px;
+line-height: 12px;
+}
+
+a {
+padding: 0;
+float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both
+}
+
+.el-col {
+   margin: 5px;
+}
+
+.el-card {
+   height: 120px;
+   background-color: whitesmoke;
+}
+
+p {
+   line-height: 15px;
+   margin: 5px;
+}

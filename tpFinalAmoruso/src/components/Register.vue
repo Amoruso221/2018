@@ -6,18 +6,18 @@
                 </router-link>
             </el-header>
             <el-main>
-                <el-row :gutter="20">
+                <el-row :gutter="10">
                     <el-col :span="6"><div class="grid-content"></div></el-col>
-                    <el-col :span="12">
+                    <el-col :span="8">
                             <div class="alinear">
                                 <img src="../assets/images/RegisterLogo.png" alt="Register">
                             </div>
                     </el-col>
-                    <el-col :span="6"><div class="grid-content"></div></el-col>
+                    <el-col :span="8"><div class="grid-content"></div></el-col>
                 </el-row>
 
-                <el-row>
-                    <el-col :span="8"><div class="grid-content"></div></el-col>
+                <el-row :gutter="5">
+                    <el-col :span="6"><div class="grid-content"></div></el-col>
                     <el-col :span="8">
                         <div class="grid-content">
                             <section class="alinear">
@@ -35,7 +35,6 @@
                         </div>
                     </el-col>
                     <el-col :span="8">
-                        <div class="grid-content">
                             <section class="alinear">
                                 <el-alert
                                     v-if="error"
@@ -63,7 +62,6 @@
                                     show-icon>
                                 </el-alert>  
                               </section>
-                        </div>
                     </el-col>
                 </el-row>
             </el-main>
@@ -125,27 +123,16 @@ export default {
     }
 
     img {
-        height: 300px;
-        width: 300px;
-    }
-
-    html {
-        background-image: url('/assets/images/LoginBackground.jpg');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        min-height: 100%;
+        height: 200px;
+        width: 200px;
     }
 
     .el-header {
     text-align: right;
     }
 
-    .error {
-    margin-top: 85%;
-    }
-
   .el-row {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     &:last-child {
       margin-bottom: 0;
     }
@@ -162,6 +149,6 @@ export default {
 
   .el-alert {
       margin: 5px;
-      max-width: 300px;
+      max-width: 250px;
   }
 </style>

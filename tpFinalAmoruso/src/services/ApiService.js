@@ -21,6 +21,7 @@ export default {
             .catch((error) => {
               /* eslint-disable */ 
               console.log(error);
+              this.$router.go('home/cardsBacks')
             })
           }, 5000)
       })

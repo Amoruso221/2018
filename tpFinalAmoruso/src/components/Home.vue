@@ -8,32 +8,34 @@
                         default-active="1"
                         background-color="#545c64"
                         text-color="#fff"
-                        active-text-color="#ffd04b">
-                    <el-menu-item index="1" @click="menu(1)" style="margin-top:50px;">
+                        active-text-color="#ffd04b"
+                        :router='true'>
+                        <img src="../assets/images/HS_logo.png" alt="Logo" @click="inicio">
+                    <el-menu-item index="cardsBySet">
                      <i class="el-icon-star-off"></i>
                      <span>Cards by Set</span>
                     </el-menu-item>
-                    <el-menu-item index="2" @click="menu(2)">
+                    <el-menu-item index="cardsByClass">
                      <i class="el-icon-star-off"></i>
                      <span>Cards by Class</span>
                     </el-menu-item>
-                    <el-menu-item index="3" @click="menu(3)">
+                    <el-menu-item index="cardsByFaction">
                      <i class="el-icon-star-off"></i>
                      <span>Cards by Faction</span>
                     </el-menu-item>
-                    <el-menu-item index="4" @click="menu(4)">
+                    <el-menu-item index="cardsByQuality">
                      <i class="el-icon-star-off"></i>
                      <span>Cards by Quality</span>
                     </el-menu-item>
-                    <el-menu-item index="5" @click="menu(5)">
+                    <el-menu-item index="cardsByRace">
                      <i class="el-icon-star-off"></i>
                      <span>Cards by Race</span>
                     </el-menu-item>
-                    <el-menu-item index="6" @click="menu(6)">
+                    <el-menu-item index="cardsByType">
                      <i class="el-icon-star-off"></i>
                      <span>Cards by Type</span>
                     </el-menu-item>
-                    <el-menu-item index="7" @click="menu(7)">
+                    <el-menu-item index="cardsBacks">
                      <i class="el-icon-star-off"></i>
                      <span>Cards Backs</span>
                     </el-menu-item>       
@@ -86,16 +88,8 @@ export default {
             this.$router.push('home/cardsBySet');
           },
 
-          menu(opcion){
-            switch(opcion){
-              case 1: this.$router.push('cardsBySet');      break;
-              case 2: this.$router.push('cardsByClass');    break;
-              case 3: this.$router.push('cardsByFaction');  break;
-              case 4: this.$router.push('cardsByQuality');  break;
-              case 5: this.$router.push('cardsByRace');     break;
-              case 6: this.$router.push('cardsByType');     break;
-              case 7: this.$router.push('cardsBacks');      break;
-            }
+          inicio(){
+            this.$router.push('cardsBySet');
           }
     }
 }
@@ -132,6 +126,11 @@ export default {
   .el-input {
     max-width: 200px;
     margin: 5px;
+  }
+
+  img {
+    height: 100px;
+    width: 200px;
   }
 
 </style>
