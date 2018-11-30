@@ -11,7 +11,7 @@ import CardsByQuality from './views/CardsByQuality.vue'
 import CardsByRace from './views/CardsByRace.vue'
 import CardsByType from './views/CardsByType.vue'
 import CardsBacks from './views/CardsBacks.vue'
-import error from './views/error.vue'
+
 
 Vue.use(Router)
 
@@ -68,11 +68,6 @@ const router = new Router({
           path: 'cardsBacks',
           name: 'cardsBacks',
           component: CardsBacks
-        },
-        {
-          path: 'error',
-          name: 'error',
-          component: error
         }
       ]
     },
